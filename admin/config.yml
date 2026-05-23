@@ -1,0 +1,75 @@
+backend:
+  name: github
+  repo: Mixou42/projet
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site"
+    files:
+      - label: "Page d'accueil"
+        name: "page"
+        file: "content/page.json"
+        format: "json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titre principal", name: "title", widget: "string" }
+              - { label: "Texte principal", name: "lead", widget: "text" }
+              - { label: "Texte bouton 1", name: "primaryButtonText", widget: "string" }
+              - { label: "Texte bouton 2", name: "secondaryButtonText", widget: "string" }
+              - { label: "Image de fond", name: "backgroundImage", widget: "image", required: false }
+              - { label: "Image de la carte", name: "cardImage", widget: "image", required: false }
+              - { label: "Texte alternatif image", name: "cardImageAlt", widget: "string", required: false }
+          - label: "Petites cases sous le titre"
+            name: "introItems"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "string" }
+          - { label: "Texte du footer", name: "footer", widget: "string" }
+
+      - label: "Cases d'information"
+        name: "info_sections"
+        file: "content/info-sections.json"
+        format: "json"
+        fields:
+          - label: "Sections"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID technique", name: "id", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Petit titre", name: "kicker", widget: "string", required: false }
+              - { label: "Résumé", name: "summary", widget: "text", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Introduction", name: "intro", widget: "text", required: false }
+              - { label: "Contenu HTML", name: "html", widget: "text", required: false }
+
+      - label: "Cartes du jeu"
+        name: "cards"
+        file: "content/cards.json"
+        format: "json"
+        fields:
+          - label: "Cartes"
+            name: "cards"
+            widget: "list"
+            summary: "{{fields.family}} — {{fields.role}} — {{fields.name}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Famille", name: "family", widget: "string" }
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Rôle", name: "role", widget: "string" }
+              - { label: "Numéro", name: "number", widget: "number", required: false }
+              - { label: "Texte", name: "info", widget: "text" }
+              - { label: "Icône", name: "icon", widget: "string", required: false }
+              - { label: "Couleur principale", name: "color", widget: "string", required: false }
+              - { label: "Couleur douce", name: "soft", widget: "string", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }

@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "badge": "Projet scolaire · Classe 1BCT · BAC PRO BCT",
+    "title": "Notre univers Boucher Charcutier Traiteur",
+    "lead": "Site interactif de présentation — classe 1BCT du Lycée Hôtelier du Touquet Paris-Plage : nos TP, nos gestes professionnels, notre voyage pédagogique et notre jeu des 7 familles.",
+    "primaryButtonText": "Explorer les informations",
+    "secondaryButtonText": "Jouer aux 7 familles",
+    "backgroundImage": "https://images.pexels.com/photos/36958865/pexels-photo-36958865.jpeg?auto=compress&cs=tinysrgb&w=1800",
+    "cardImage": "https://images.pexels.com/photos/26733059/pexels-photo-26733059.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "cardImageAlt": "Personnes travaillant en cuisine professionnelle"
+  },
+  "introItems": [
+    {
+      "title": "1BCT",
+      "text": "Notre classe et notre filière professionnelle."
+    },
+    {
+      "title": "TP atelier",
+      "text": "Boucherie-charcuterie ensemble, traiteur séparé."
+    },
+    {
+      "title": "42 cartes",
+      "text": "Images et textes conservés dans le jeu."
+    },
+    {
+      "title": "2 bots",
+      "text": "Une partie jouable à trois joueurs."
+    }
+  ],
+  "footer": "Projet scolaire — Classe 1BCT · Lycée Hôtelier du Touquet Paris-Plage · BAC PRO Boucher Charcutier Traiteur · Jeu des 7 familles"
+}
